@@ -1,0 +1,10 @@
+name: GitHub Actions Demo 
+on: 
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the triggering event 
+        run: echo "the triggered event is ${{github.event_name}}."  
+      - name: Print the OS of the runner
+        run: echo " This job is running on a ${{ runner.os }} server "
